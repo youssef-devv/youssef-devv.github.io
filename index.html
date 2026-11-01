@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Youssef | Flutter Engineer Portfolio</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --text-color: #f8fafc;
+            --accent-color: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+        header {
+            max-width: 800px;
+            margin: 4rem auto 2rem;
+            text-align: center;
+        }
+        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .subtitle { color: var(--accent-color); font-size: 1.2rem; font-weight: 500; }
+        main { max-width: 800px; margin: 0 auto; }
+        section { margin-bottom: 3rem; }
+        h2 { border-bottom: 2px solid var(--card-bg); padding-bottom: 0.5rem; color: var(--accent-color); }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-top: 1rem; }
+        @media(min-width: 600px) { .grid { grid-template-columns: 1fr 1fr; } }
+        .card { background: var(--card-bg); padding: 1.5rem; border-radius: 8px; border: 1px solid #334155; }
+        .card h3 { margin-top: 0; color: #fff; }
+        .tag { display: inline-block; background: #0284c7; font-size: 0.8rem; padding: 0.1rem 0.5rem; border-radius: 4px; font-weight: bold; margin-bottom: 0.5rem; }
+        .tag.personal { background: #7c3aed; }
+        footer { text-align: center; margin-top: 4rem; color: #64748b; font-size: 0.9rem; }
+        a { color: var(--accent-color); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Youssef</h1>
+        <div class="subtitle">Mobile Application Engineer • Dart & Flutter Specialist</div>
+        <p>Architecting high-performance, cross-platform applications optimized for Global & GCC markets.</p>
+    </header>
+
+    <main>
+        <!-- SECTION 1: COMMERCIAL PRODUCTION MAP -->
+        <section id="commercial">
+            <h2>💼 Commercial Implementations</h2>
+            <p>Production-ready applications focused on business logic, efficiency, and scale.</p>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag">Commercial MVP</span>
+                    <h3>Bilingual E-Commerce System</h3>
+                    <p>A high-velocity retail storefront featuring localization (Arabic/English toggle), robust state management, and real-time backend synchronization.</p>
+                </div>
+                <div class="card">
+                    <span class="tag">Commercial MVP</span>
+                    <h3>SaaS Dashboard Client</h3>
+                    <p>A clean analytics companion mobile app consuming secure REST APIs, handling data stream processing, and beautiful fluid charting metrics.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: THE GLIMPSE INTO MY WORLD ARTISAN SECTION -->
+        <section id="personal">
+            <h2>✨ A Glimpse Into My World</h2>
+            <p>Experimental UX builds, custom animation paradigms, and hardware/software crossover concepts.</p>
+            <div class="grid">
+                <div class="card">
+                    <span class="tag personal">Experimental UX</span>
+                    <h3>Fluid Animation Paradigm</h3>
+                    <p>Testing the absolute rendering speed limits of Flutter canvas architectures using fully custom interactive UI transitions.</p>
+                </div>
+                <div class="card">
+                    <span class="tag personal">Hardware Lab</span>
+                    <h3>Smart Controller Bridge</h3>
+                    <p>An early-stage personal concept exploring communication links between Flutter interfaces and micro-controllers / external software layers.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Explore my entire open-source evolution trail on <a href="https://github.com">GitHub</a>.</p>
+    </footer>
+
+</body>
+</html>
